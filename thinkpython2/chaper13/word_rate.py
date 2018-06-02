@@ -80,5 +80,8 @@ def random_word(h):
         t.extend([word] * freq)
     return random.choice(t)
 
-h = get_file("emma.txt")
-print(random_word(h))
+#h = get_file("emma.txt")
+#   print(random_word(h))
+
+def shift(prefix, word):
+    return prefix[1:] + (word,)
